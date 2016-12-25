@@ -22,16 +22,14 @@ html(lang='en')
       h2.header.
         Cryptographic 🔐 web messenger
 
-      div.login-cont
+      form(method='POST', action='/email-post').login-cont
         div.label.
-          Sign in with
-
-        div.buttons
-          a(href='https://vk.com/auth').login-submit.vk.
-            VK
-          a(href='https://vk.com/auth').login-submit.facebook.
-            Facebook
-
+          Sign in with e-mail
         div.label
           a(href='/with-password').alt-login.
-            Sign in with e-mail
+            (or sign in with VK or Facebook)
+
+        div.inputs
+          input(type='email', placeholder='yourname@example.com')
+          input(type='submit', value='Send the link to sign in')
+

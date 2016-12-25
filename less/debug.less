@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) 2013. Rflect, Alex K.
+ */
+
+/* Author:alexeykofficial@gmail.com (Alex K.) */
+
+
+.inputs {
+  .flex-display();
+  .flex-direction(column);
+  .align-items(center);
+  padding: 20px;
+
+  input {
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #f9f9f9;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    background: #eee;
+
+    -webkit-appearance: none;
+    .border-radius(none);
+    border-radius: 2px;
+
+    .transition(width);
+
+    &:focus, &:active {
+      background: #6a9dff;
+      color: white;
+      border-color: #6a9dff;
+      width: 320px;
+    }
+  }
+}
