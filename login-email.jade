@@ -15,21 +15,15 @@ html(lang='en')
 
       h1.header
         span.
-          Whisp
-        sup.status-mark.
-          alpha
-
-      h2.header.
-        Cryptographic 🔐 web messenger
+          Sign in
 
       form(method='POST', action='/email-post').login-cont
-        div.label.
-          Sign in with e-mail
-        div.label
+
+        div.label.oauth-login-cont
           a(href='/with-password').alt-login.
             (or sign in with VK or Facebook)
 
         div.inputs
           input(type='email', placeholder='yourname@example.com')
-          input(type='submit', value='Send the link to sign in')
+          input(type='submit', value='Send')
 
